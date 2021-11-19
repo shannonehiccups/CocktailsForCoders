@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Yuji+Syuku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;0,700;1,200;1,300;1,400&display=swap');
 
 * {
     background-color: #edebed;
-    color: rgb(51, 51, 51, .95);
-    font-family: 'Yuji Syuku', serif;
+    color: rgb(51, 51, 51, .95); 
+    font-family: 'Source Sans Pro', sans-serif;
+
+
     box-sizing: border-box; 
     margin: 0;
     padding: 0;    
@@ -15,10 +17,11 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    background-image: url('mainphoto.jpg');
+    /* background-image: url('mainphoto.jpg'); */
+    background-color: #edebed;
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #5a5a5a;
+    /* color: #5a5a5a; */
 
     display: flex;
     flex-direction: column;
@@ -47,29 +50,34 @@ transform: translate(-50%, -50%);
 
 /* #img {
     filter: blur(8px);
-} */
+} */ 
 
 h1 {
-   /* display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10%; */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10%;
 
-     display: flex;
+   font-family: 'Playfair Display', serif;
+   font-weight: 700;
+
+     /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-    text-align: center;
-    /* background-color: rgb(68, 68, 68, 0.5); */
-    /* background-color: rgba(243, 243, 243, 0.8); */
-    background-color: thistle;
+    align-items: center; */
 
+     background-image: url('mainphoto.jpg');
+    text-align: center;
+     background-color: rgb(68, 68, 68, 0.5); 
+    /* background-color: rgba(243, 243, 243, 0.8);*/
+   background-color: thistle;
     height: 175px;
-    width: 200px;
+    width: 1500px;
     position: relative;
     letter-spacing: 9px;
-    font-size: 39px;
+    font-size: 80px;
+    margin-bottom: 0px;
+    
     
 
 /* position: absolute;
@@ -90,11 +98,34 @@ margin: -35px 0 0 -35px; */
 
 }
 
+h2 {
+  color: black;
+  text-align: center;
+}
 
-/*  Use object fit to add pic */
+.div1, .div2 {
+ 
+  /* border: solid 3px black; */
+  background-color: rgb(68, 68, 68, 0.5);
+  height: 30px;
+  width: 100%;
 
+}
 
+.div2 {
+  margin-bottom: 80px;
+}
 
+.div1 {
+  margin-top: 90px;
+}
+
+#break {
+  width: 82%;
+  border: solid 1px rgb(68, 68, 68, 0.5);
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
 
   
   /* CUSTOMIZE THE CAROUSEL
@@ -109,6 +140,9 @@ margin: -35px 0 0 -35px; */
     bottom: 3rem;
     z-index: 10;
   }
+
+
+
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
@@ -159,6 +193,8 @@ margin: -35px 0 0 -35px; */
     line-height: 1;
     letter-spacing: -.05rem;
   }
+
+  
   
   
   /* RESPONSIVE CSS
@@ -192,11 +228,12 @@ margin: -35px 0 0 -35px; */
 h4{font-size: 20px;}
 
 #intro{ 
-    font-size: 30px;
+    font-size: 20px;
     max-width: 900px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-bottom: 70px;
 }
 
 #month{
@@ -204,5 +241,7 @@ h4{font-size: 20px;}
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
